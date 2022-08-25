@@ -92,11 +92,12 @@ func (c *CLI) Run(args []string) error {
 		},
 	)
 	if err != nil {
-		log.Printf("[ERROR] Failed to create review")
+		log.Printf("[ERROR] Failed to create a review")
 		return err
 	}
 
 	log.Printf("[INFO] Successfully created a review!")
 	log.Printf("[TRACE] response: %v", review)
+
 	return nil
 }
